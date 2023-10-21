@@ -101,8 +101,17 @@ class OrderSystem {
                     new Burger("Cheeseburger", 6.9),
                     new Burger("Hamburger", 5.4)
             };
-            cart.add(burgers[burgerChoice - 1]);
-            System.out.println(burgers[burgerChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+
+            System.out.println(burgers[burgerChoice - 1].getName() + "를 장바구니에 추가하시겠습니까?");
+            System.out.println("1. 확인           2. 취소");
+            int confirmChoice = scanner.nextInt();
+
+            if (confirmChoice == 1) {
+                cart.add(burgers[burgerChoice - 1]);
+                System.out.println(burgers[burgerChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+            } else {
+                System.out.println(burgers[burgerChoice - 1].getName() + "를 장바구니에 추가하지 않았습니다.");
+            }
         } else {
             System.out.println("잘못된 메뉴 선택입니다. 다시 선택해주세요.");
         }
@@ -119,8 +128,17 @@ class OrderSystem {
                     new FrozenCustard("Floats", 6.5),
                     new FrozenCustard("Cup & Cones", 5.4)
             };
-            cart.add(frozenCustards[frozenCustardChoice - 1]);
-            System.out.println(frozenCustards[frozenCustardChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+
+            System.out.println(frozenCustards[frozenCustardChoice - 1].getName() + "를 장바구니에 추가하시겠습니까?");
+            System.out.println("1. 확인        2. 취소");
+            int confirmChoice = scanner.nextInt();
+
+            if (confirmChoice == 1) {
+                cart.add(frozenCustards[frozenCustardChoice - 1]);
+                System.out.println(frozenCustards[frozenCustardChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+            } else {
+                System.out.println(frozenCustards[frozenCustardChoice - 1].getName() + "를 장바구니에 추가하지 않았습니다.");
+            }
         } else {
             System.out.println("잘못된 메뉴 선택입니다. 다시 선택해주세요.");
         }
@@ -137,8 +155,17 @@ class OrderSystem {
                     new Drink("Fresh Brewed Iced Tea", 3.5),
                     new Drink("Fountain Soda", 2.9)
             };
-            cart.add(drinks[drinksChoice - 1]);
-            System.out.println(drinks[drinksChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+
+            System.out.println(drinks[drinksChoice - 1].getName() + "를 장바구니에 추가하시겠습니까?");
+            System.out.println("1. 확인        2. 취소");
+            int confirmChoice = scanner.nextInt();
+
+            if (confirmChoice == 1) {
+                cart.add(drinks[drinksChoice - 1]);
+                System.out.println(drinks[drinksChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+            } else {
+                System.out.println(drinks[drinksChoice - 1].getName() + "를 장바구니에 추가하지 않았습니다.");
+            }
         } else {
             System.out.println("잘못된 메뉴 선택입니다. 다시 선택해주세요.");
         }
@@ -152,8 +179,17 @@ class OrderSystem {
             Beer[] beers = {
                     new Beer("Abita Root Beer", 4.8)
             };
-            cart.add(beers[beerChoice - 1]);
-            System.out.println(beers[beerChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+
+            System.out.println(beers[beerChoice - 1].getName() + "를 장바구니에 추가하시겠습니까?");
+            System.out.println("1. 확인        2. 취소");
+            int confirmChoice = scanner.nextInt();
+
+            if (confirmChoice == 1) {
+                cart.add(beers[beerChoice - 1]);
+                System.out.println(beers[beerChoice - 1].getName() + "를 장바구니에 추가했습니다.");
+            } else {
+                System.out.println(beers[beerChoice - 1].getName() + "를 장바구니에 추가하지 않았습니다.");
+            }
         } else {
             System.out.println("잘못된 메뉴 선택입니다. 다시 선택해주세요.");
         }
